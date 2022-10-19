@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	@apply text-gray-800 bg-gray-100 font-inter;
+}
+
 h1 {
-	@apply text-gray-100 text-8xl font-semibold font-poppins tracking-[-0.015em];
+	@apply text-white text-3xl xl:text-8xl font-medium xl:font-semibold font-poppins tracking-[-0.015em];
 }
