@@ -46,6 +46,12 @@ module.exports = {
 				poppins: ["Poppins", "sans-serif"],
 				inter: ["Inter", "sans-serif"],
 			},
+			fontSize: {
+				"2.5xl": "1.75rem",
+			},
+			height: {
+				18: "4.5rem",
+			},
 		},
 	},
 	plugins: [],
