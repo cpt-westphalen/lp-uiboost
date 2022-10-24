@@ -1,5 +1,10 @@
 import { SVGPropTypes } from "./types";
 import smartphoneMock from "./assets/front-page-mobile.png";
+import appStoreApple from "./assets/app-store.svg";
+import appStoreGoogle from "./assets/google-play.svg";
+import students from "./assets/students-number.svg";
+import hours from "./assets/hours-number.svg";
+import mentorship from "./assets/mentorship-hours-number.svg";
 
 function App() {
 	return (
@@ -17,13 +22,9 @@ function App() {
 					/>
 				</button>
 			</header>
-			<main className='px-6 flex flex-col gap-10'>
-				<div
-					id='1'
-					className='flex flex-col gap-10 items-center'>
-					<div
-						id='1-1'
-						className='flex flex-col gap-4'>
+			<main className='px-6 flex flex-col gap-10 items-center'>
+				<div className='flex flex-row flex-wrap gap-10 mb-10'>
+					<div className='flex flex-col gap-4'>
 						<p className='text-sm font-medium'>
 							Exclusivos para alunos uiBoost 📏
 						</p>
@@ -38,62 +39,98 @@ function App() {
 							qualquer hora.
 						</p>
 					</div>
-					<div id='download-icons'>
-						<div>Download via App Store</div>
-						<div>Download via Google Play</div>
+					<div className='flex flex-row w-full gap-3 items-center justify-evenly'>
+						<a href='#'>
+							<img
+								src={appStoreApple}
+								alt='Download via Apple App Store'
+								className='min-w-32'
+							/>
+						</a>
+						<a href='#'>
+							<img
+								src={appStoreGoogle}
+								alt='Download via Google Play store'
+								className='min-w-32'
+							/>
+						</a>
 					</div>
-					<div
-						id='1-2'
-						className='w-full'>
-						<img
-							src={smartphoneMock}
-							alt='Visualization of the app home screen on a mobile device'
-						/>
-					</div>
-					<ArrowIcon
-						className='h-14 my-10'
-						color='#F974CC'
-						style={{ transform: "scaleY(-100%)" }}
+				</div>
+				<div className='w-full'>
+					<img
+						src={smartphoneMock}
+						alt='Visualization of the app home screen on a mobile device'
 					/>
-					<div className='flex flex-col justify-center text-center gap-10'>
-						<div className='flex flex-col gap-4'>
-							<h1 className='font-semibold text-2.5xl leading-8'>
-								O{" "}
-								<span className='text-pink relative'>
-									Boost
-									<UnderlineCallout
-										color='#F974CC'
-										width={"4ch"}
-										className='absolute bottom-[-2px] left-0 right-0'
-									/>
-								</span>{" "}
-								para a sua carreira
-							</h1>
-							<p>
-								Ajudamos designers a se especializarem em UI
-								design
+				</div>
+				<ArrowIcon
+					className='h-14 my-10'
+					color='#F974CC'
+					style={{ transform: "scaleY(-100%)" }}
+				/>
+				<div className='flex flex-col justify-center text-center gap-10'>
+					<div className='flex flex-col gap-4'>
+						<h1 className='font-semibold lg:text-5xl text-2.5xl leading-8'>
+							O{" "}
+							<span className='text-pink relative'>
+								Boost
+								<UnderlineCallout
+									color='#F974CC'
+									width={"4ch"}
+									className='absolute bottom-[-2px] left-0 right-0'
+								/>
+							</span>{" "}
+							para a sua carreira
+						</h1>
+						<p>
+							Ajudamos designers a se especializarem em UI design
+						</p>
+					</div>
+					<div className='flex flex-row gap-10 flex-wrap justify-center items-center'>
+						<div className='flex flex-col gap-4 justify-center items-center'>
+							<div className='flex flex-row flex-nowrap gap-4 w-fit items-center'>
+								<img
+									src={students}
+									alt='Mais de 300'
+									className='max-h-[72px]'
+								/>
+								<span className='text-theme-gradient'>+</span>
+							</div>
+							<p className='text-white'>
+								Alunos com certificações
 							</p>
 						</div>
-						<div className='flex flex-col gap-10'>
-							<div id='2-2-1'>
-								<span>300+</span>
-								<p>Alunos com certificações</p>
+						<div className='flex flex-col gap-4 justify-center items-center'>
+							<div className='flex flex-row flex-nowrap gap-4 w-fit items-center'>
+								<img
+									src={hours}
+									alt='Mais de 60'
+									className='max-h-[72px]'
+								/>
+								<span className='text-theme-gradient'>+</span>
 							</div>
-							<div id='2-2-2'>
-								<span>60+</span>
-								<p>Horas de conteúdo gravado</p>
+							<p className='text-white'>
+								Horas de conteúdo gravado
+							</p>
+						</div>
+						<div className='flex flex-col gap-4 justify-center items-center'>
+							<div className='flex flex-row flex-nowrap gap-4 w-fit items-center'>
+								<img
+									src={mentorship}
+									alt='Mais de 5'
+									className='max-h-[72px]'
+								/>
+								<span className='text-theme-gradient'>+</span>
 							</div>
-							<div id='2-2-3'>
-								<span>5+</span>
-								<p>Horas de mentoria por turma</p>
-							</div>
+							<p className='text-white'>
+								Horas de mentoria por turma
+							</p>
 						</div>
 					</div>
-					<div
-						id='uiboost-divider'
-						className='h-20'>
-						- ui boost ui boost ui boost ui boost -
-					</div>
+				</div>
+				<div
+					id='uiboost-divider'
+					className='h-20'>
+					- ui boost ui boost ui boost ui boost -
 				</div>
 			</main>
 		</div>
