@@ -1,7 +1,7 @@
 import { AppMock } from "./AppMock";
 import { DownloadIcons } from "./DownloadIcons";
-import { Heading } from "../Heading";
-import { FlexWrap } from "../Structures/FlexWrap";
+import { Heading } from "../../components/Heading";
+import { FlexWrap } from "../../components/Structures/FlexWrap";
 
 export const OpeningSection = () => (
 	<FlexWrap>

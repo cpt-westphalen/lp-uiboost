@@ -1,10 +1,11 @@
 import { ArrowDivider } from "./svgs/ArrowDivider";
 import { FlexCenter } from "./components/Structures/FlexCenter";
 import { Header } from "./components/Header";
-import { OpeningSection } from "./components/OpeningSection";
+import { OpeningSection } from "./sections/OpeningSection";
 import { Slogan } from "./components/Slogan";
 import { Stats } from "./components/Stats";
 import { UiBoostDivider } from "./components/Dividers/UiBoostDivider";
+import { BenefitsSection } from "./sections/BenefitsSection";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Stats />
 				</FlexCenter>
 				<UiBoostDivider />
+				<BenefitsSection />
 			</main>
 		</>
 	);
