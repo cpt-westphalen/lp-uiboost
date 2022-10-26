@@ -4,7 +4,7 @@
 
 @layer base {
 	h1 {
-		@apply text-white text-3xl xl:text-8xl font-medium xl:font-semibold font-poppins tracking-[-0.015em];
+		@apply text-white text-3xl xl:text-6xl font-medium xl:font-semibold font-poppins tracking-[-0.015em];
 	}
 }
 
