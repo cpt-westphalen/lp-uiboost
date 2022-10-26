@@ -6,8 +6,7 @@ export const FlexWrap = ({
 	className?: string;
 }) => {
 	return (
-		<div
-			className={`px-6 flex flex-row flex-wrap gap-10 mb-10 ${className}`}>
+		<div className={`flex flex-row flex-wrap gap-10 mb-10 ${className}`}>
 			{children}
 		</div>
 	);

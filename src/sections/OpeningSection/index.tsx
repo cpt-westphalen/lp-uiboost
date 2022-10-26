@@ -4,7 +4,7 @@ import { Heading } from "../../components/Heading";
 import { FlexWrap } from "../../components/Structures/FlexWrap";
 
 export const OpeningSection = () => (
-	<FlexWrap>
+	<FlexWrap className='px-6'>
 		<Heading
 			superTitle='Exclusivos para alunos uiBoost 📏'
 			title='Estude design até em outra galáxia'
