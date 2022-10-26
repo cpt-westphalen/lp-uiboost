@@ -1,11 +1,14 @@
-import { ArrowDivider } from "./svgs/ArrowDivider";
 import { FlexCenter } from "./components/Structures/FlexCenter";
-import { Header } from "./components/Header";
+
+import { FeaturesSection } from "./sections/FeaturesSection";
 import { OpeningSection } from "./sections/OpeningSection";
+
+import { Header } from "./components/Header";
 import { Slogan } from "./components/Slogan";
 import { Stats } from "./components/Stats";
+
+import { ArrowDivider } from "./svgs/ArrowDivider";
 import { UiBoostDivider } from "./components/Dividers/UiBoostDivider";
-import { FeaturesSection } from "./sections/FeaturesSection";
 import { EmptyDivider } from "./components/Dividers/EmptyDivider";
 
 function App() {
