@@ -2,6 +2,7 @@ import { FlexCenter } from "./components/Structures/FlexCenter";
 
 import { FeaturesSection } from "./sections/FeaturesSection";
 import { OpeningSection } from "./sections/OpeningSection";
+import { TestimonialSection } from "./sections/TestimonialSection";
 
 import { Header } from "./components/Header";
 import { Slogan } from "./components/Slogan";
@@ -29,6 +30,7 @@ function App() {
 				<UiBoostDivider />
 				<FeaturesSection />
 				<EmptyDivider />
+				<TestimonialSection />
 			</main>
 		</>
 	);
