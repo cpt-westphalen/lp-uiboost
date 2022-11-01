@@ -1,5 +1,9 @@
-import { FaChevronRight } from "react-icons/fa";
 import { FlexCenter } from "../../components/Structures/FlexCenter";
+
+import { Carousel } from "./Carousel";
+
+import { FaChevronRight } from "react-icons/fa";
+
 import { avatars } from "./avatars";
 
 export const TestimonialSection = () => (
@@ -22,5 +26,6 @@ export const TestimonialSection = () => (
 			<p className='text-lg font-semibold'>Quero ser ui Boost</p>
 			<FaChevronRight size={16} />
 		</a>
+		<Carousel />
 	</FlexCenter>
 );
