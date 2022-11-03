@@ -16,7 +16,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main className='flex flex-col gap-10 items-center'>
+			<main className='flex flex-col gap-10 items-center overflow-x-hidden'>
 				<OpeningSection />
 				<ArrowDivider
 					className='h-14 mb-10'
@@ -31,6 +31,7 @@ function App() {
 				<FeaturesSection />
 				<EmptyDivider />
 				<TestimonialSection />
+				<EmptyDivider />
 			</main>
 		</>
 	);

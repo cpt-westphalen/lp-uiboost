@@ -22,7 +22,9 @@ export const TestimonialSection = () => (
 			))}
 			<span className='mx-2 font-medium text-white'>+2.000 alunos</span>
 		</div>
-		<a className='text-pink flex flex-row gap-2 justify-center items-center'>
+		<a
+			href='#'
+			className='text-pink self-center flex flex-row gap-2 justify-center items-center'>
 			<p className='text-lg font-semibold'>Quero ser ui Boost</p>
 			<FaChevronRight size={16} />
 		</a>
