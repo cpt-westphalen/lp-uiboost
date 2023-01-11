@@ -16,3 +16,15 @@
 		@apply text-8xl font-semibold bg-theme-linear bg-clip-text text-transparent;
 	}
 }
+
+@layer utilities {
+	.find-me {
+		@apply border border-solid border-red-500;
+	}
+	.find-me-2 {
+		@apply border border-solid border-pink-500;
+	}
+	.find-me-3 {
+		@apply border border-solid border-green-500;
+	}
+}
