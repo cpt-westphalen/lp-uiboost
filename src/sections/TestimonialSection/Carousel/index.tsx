@@ -37,6 +37,10 @@ const DynamicCarousel = ({ carousel }: { carousel: CarouselType[] }) => {
 	const [focusIndex, setFocusIndex] = useState(
 		Math.floor(carousel.length / 2)
 	);
+
+	const isLastItem = focusIndex === carousel.length - 1;
+	const isFirstItem = focusIndex === 0;
+
 	return (
 		<div className='flex flex-col self-center max-w-full w-80 overflow-x-visible h-fit'>
 			<ul
@@ -53,7 +57,9 @@ const DynamicCarousel = ({ carousel }: { carousel: CarouselType[] }) => {
 							onClick={() =>
 								focusIndex !== i ? setFocusIndex(i) : false
 							}
-							className={""}>
+							className={
+								focusIndex !== i ? "hover:cursor-pointer" : ""
+							}>
 							<div
 								className={`${
 									i !== focusIndex
@@ -84,20 +90,20 @@ const DynamicCarousel = ({ carousel }: { carousel: CarouselType[] }) => {
 			<div className='flex justify-center items-center gap-6 my-4'>
 				<button
 					onClick={() => {
-						focusIndex === 0
+						isFirstItem
 							? setFocusIndex(carousel.length - 1)
 							: setFocusIndex((i) => i - 1);
 					}}
-					className='font-bold bg-gray-200 opacity-20 hover:opacity-100 w-8 h-8 p-0 m-0 flex justify-center items-center rounded-full transition'>
+					className='opacity-20 hover:opacity-100 active:opacity-70 font-bold bg-gray-200 w-8 h-8 p-0 m-0 flex justify-center items-center rounded-full transition'>
 					{"<"}
 				</button>
 				<button
 					onClick={() => {
-						focusIndex === carousel.length - 1
+						isLastItem
 							? setFocusIndex(0)
 							: setFocusIndex((i) => i + 1);
 					}}
-					className='font-bold bg-gray-200 opacity-20 hover:opacity-100 w-8 h-8 p-0 m-0 flex justify-center items-center rounded-full transition'>
+					className='opacity-20 hover:opacity-100 active:opacity-70 font-bold bg-gray-200 w-8 h-8 p-0 m-0 flex justify-center items-center rounded-full transition'>
 					{">"}
 				</button>
 			</div>

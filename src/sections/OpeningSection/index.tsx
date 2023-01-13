@@ -1,5 +1,5 @@
 import { AppMock } from "./AppMock";
-import { DownloadIcons } from "./DownloadIcons";
+import { DownloadIcons } from "../../components/DownloadIcons";
 import { Heading } from "../../components/Heading";
 import { FlexWrap } from "../../components/Structures/FlexWrap";
 
