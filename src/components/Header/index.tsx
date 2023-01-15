@@ -1,17 +1,16 @@
-import { DropMenuIcon } from "../../svgs/DropMenuIcon";
 import { Logo } from "../../svgs/Logo";
+import { Menu } from "./Menu";
 
 export const Header = () => (
-	<header className='flex flex-row justify-between items-center px-6 w-full h-16 mb-8 mt-4'>
-		<Logo
-			color='white'
-			width={80}
-		/>
-		<button>
-			<DropMenuIcon
-				color='white'
-				width={36}
-			/>
-		</button>
+	<header className='w-full h-[88px] border-b border-gray-150'>
+		<div className='m-auto max-w-[1280px] flex flex-row justify-between items-center px-6 h-16 mb-8 mt-4'>
+			<a href='#'>
+				<Logo
+					color='white'
+					width={80}
+				/>
+			</a>
+			<Menu />
+		</div>
 	</header>
 );
