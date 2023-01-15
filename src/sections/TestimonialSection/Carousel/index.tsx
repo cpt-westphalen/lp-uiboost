@@ -72,6 +72,7 @@ const DynamicCarousel = ({ carousel }: { carousel: CarouselType[] }) => {
 										src={t.imgUrl}
 										alt={"img"}
 										className='h-10 flex-grow-0 flex-shrink-0 basis-10'
+										loading='lazy'
 									/>
 									<div className='text-start'>
 										<p className='font-semibold'>

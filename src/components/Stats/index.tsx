@@ -39,6 +39,7 @@ const NumberStats = ({
 					src={src}
 					alt={alt}
 					className='max-h-[72px]'
+					loading='lazy'
 				/>
 				<span className='text-theme-gradient'>+</span>
 			</div>

@@ -18,6 +18,7 @@ export const TestimonialSection = () => (
 					src={a}
 					alt=''
 					className='ml-[-5px]'
+					loading='lazy'
 				/>
 			))}
 			<span className='mx-2 font-medium text-white'>+2.000 alunos</span>
