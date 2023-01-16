@@ -1,13 +1,12 @@
 import { FiMail } from "react-icons/fi";
-import { FlexCenter } from "../../components/Structures/FlexCenter";
 import { AgreeCheckbox } from "./AgreeCheckbox";
 
 export const NewsletterSection = () => {
 	return (
-		<FlexCenter className='px-5 py-8 lg:w-full'>
-			<div className='flex flex-col justify-center items-center px-4 py-8 bg-gray-150 rounded-lg min-h-[208px]'>
-				<div className='flex flex-row flex-wrap gap-2 justify-center items-center lg:justify-center lg:gap-24'>
-					<div className='mb-4 flex flex-col items-center'>
+		<div className='flex flex-col justify-center w-full'>
+			<div className='flex flex-col justify-center items-center flex-1 mx-4 px-4 py-8 bg-gray-150 rounded-lg min-h-[208px] '>
+				<div className='flex flex-row flex-wrap gap-2 lg:justify-start justify-center items-start lg:gap-24'>
+					<div className='mb-4 flex flex-col items-center md:items-start'>
 						<div className='flex gap-4 items-center'>
 							<FiMail
 								size={30}
@@ -19,7 +18,7 @@ export const NewsletterSection = () => {
 						</div>
 						<p>Inscreva-se e receba as novidades no seu e-mail.</p>
 					</div>
-					<form className='lg:flex-1 flex flex-row flex-wrap gap-2'>
+					<form className='lg:flex-1 flex flex-row flex-wrap gap-2 md:pt-1'>
 						<div className='flex flex-col gap-2 flex-1'>
 							<input
 								type='text'
@@ -35,6 +34,6 @@ export const NewsletterSection = () => {
 					</form>
 				</div>
 			</div>
-		</FlexCenter>
+		</div>
 	);
 };

@@ -1,5 +1,3 @@
-import { FlexCenter } from "../../components/Structures/FlexCenter";
-
 import { Carousel } from "./Carousel";
 
 import { FaChevronRight } from "react-icons/fa";
@@ -7,7 +5,9 @@ import { FaChevronRight } from "react-icons/fa";
 import { avatars } from "./avatars";
 
 export const TestimonialSection = () => (
-	<FlexCenter className='w-full px-6 gap-4'>
+	<div
+		id='depoimentos'
+		className='flex flex-col justify-center text-center w-full px-6 gap-4'>
 		<h2 className='font-semibold text-3xl'>
 			O que alguns dos nossos alunos estão falando
 		</h2>
@@ -30,5 +30,5 @@ export const TestimonialSection = () => (
 			<FaChevronRight size={16} />
 		</a>
 		<Carousel />
-	</FlexCenter>
+	</div>
 );

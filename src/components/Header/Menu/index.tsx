@@ -40,7 +40,9 @@ export const Menu = ({ className }: MenuProps) => {
 				<ul
 					className={`flex flex-row gap-6 bg-gray-100 transition origin-top shadow-2xl rounded-b`}>
 					{menuItems.map((item) => (
-						<a href={item.anchor}>
+						<a
+							href={item.anchor}
+							key={item.anchor + "-linear"}>
 							<li className='rounded font-medium text-lg'>
 								{item.text}
 							</li>
@@ -75,7 +77,9 @@ export const Menu = ({ className }: MenuProps) => {
 							showMenu ? "scale-y-100" : "scale-y-0"
 						}`}>
 						{menuItems.map((item) => (
-							<a href={item.anchor}>
+							<a
+								href={item.anchor}
+								key={item.anchor + "-mobile"}>
 								<li className='hover:bg-gray-150 py-1 px-8 rounded font-medium text-lg'>
 									{item.text}
 								</li>

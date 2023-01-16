@@ -1,5 +1,4 @@
 import { Heading } from "../../components/Heading";
-import { FlexWrap } from "../../components/Structures/FlexWrap";
 import { IconItem } from "./IconItem";
 
 import featuresImg from "../../assets/features-art.png";
@@ -9,8 +8,10 @@ import threeLayersIcon from "../../assets/three-layers-icon.svg";
 import starIcon from "../../assets/star-icon.svg";
 
 export const FeaturesSection = () => (
-	<FlexWrap className='px-6 items-center justify-center'>
-		<FlexWrap className='max-w-2xl justify-center items-center gap-20'>
+	<div
+		id='sobre'
+		className='flex flex-col xl:flex-row xl:flex-wrap gap-10 mb-10 px-6 items-center justify-center'>
+		<div className='flex flex-row flex-wrap mb-10 flex-1 justify-center items-center gap-20'>
 			<Heading
 				title='A Netflix tá diferente...'
 				desc='Reunimos diversas funcionalidades em um app super prático para você estudar em qualquer lugar do planeta.'
@@ -43,12 +44,12 @@ export const FeaturesSection = () => (
 					size={38}
 				/>
 			</ul>
-		</FlexWrap>
+		</div>
 		<img
 			src={featuresImg}
 			alt=''
 			loading='lazy'
 			className='max-w-lg w-full'
 		/>
-	</FlexWrap>
+	</div>
 );

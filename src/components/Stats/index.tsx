@@ -1,11 +1,9 @@
-import { FlexWrap } from "../Structures/FlexWrap";
-
 import students from "../../assets/students-number.svg";
 import mentorship from "../../assets/mentorship-hours-number.svg";
 import hours from "../../assets/hours-number.svg";
 
 export const Stats = () => (
-	<FlexWrap className='justify-center items-center'>
+	<div className='flex flex-row flex-wrap gap-10 mb-10 justify-center items-center'>
 		<NumberStats
 			src={students}
 			alt={"Mais de 300"}
@@ -21,7 +19,7 @@ export const Stats = () => (
 			alt={"Mais de 5"}
 			text={"Horas de mentoria por turma"}
 		/>
-	</FlexWrap>
+	</div>
 );
 const NumberStats = ({
 	src,
